@@ -1090,7 +1090,7 @@ p.price {
       line-height: 36px; } }
   @media (max-width: 1024px) {
     .gallery-goods h3 {
-      font-size: 50px;
+      font-size: 4.88vw;
       line-height: 53px; } }
 
 .gallery-goods a {
@@ -1098,23 +1098,20 @@ p.price {
 
 .gallery-cards {
   display: grid;
-  grid-template-columns: repeat(4, 283px);
+  grid-template-columns: repeat(auto-fit, minmax(189px, 1fr));
   -moz-column-gap: 4.95vw;
        column-gap: 4.95vw;
   text-align: center; }
   @media (max-width: 1600px) {
     .gallery-cards {
-      grid-template-columns: repeat(4, 225px);
       -moz-column-gap: 4.75vw;
            column-gap: 4.75vw; } }
   @media (max-width: 1280px) {
     .gallery-cards {
-      grid-template-columns: repeat(4, 189px);
       -moz-column-gap: 5vw;
            column-gap: 5vw; } }
   @media (max-width: 1024px) {
     .gallery-cards {
-      grid-template-columns: repeat(3, 290px);
       -moz-column-gap: 2.93vw;
            column-gap: 2.93vw;
       row-gap: 50px; } }
@@ -1130,12 +1127,28 @@ p.price {
       margin-bottom: 21px; } }
 
 .gallery-cards__item {
-  display: flex; }
+  display: grid; }
 
 .gallery-cards__item.card::after {
   top: 60px;
   right: -35px;
   z-index: 20; }
+
+@media (max-width: 1024px) {
+  .gallery-cards__item li:nth-child(4) {
+    grid-column: 2 / span 2; } }
+
+.gallery-cards__item a {
+  width: 283px; }
+  @media (max-width: 1600px) {
+    .gallery-cards__item a {
+      width: 225px; } }
+  @media (max-width: 1280px) {
+    .gallery-cards__item a {
+      width: 189px; } }
+  @media (max-width: 1024px) {
+    .gallery-cards__item a {
+      width: 27.64vw; } }
 
 .gallery-cards p {
   position: relative;
@@ -1190,8 +1203,8 @@ p.price {
       margin-top: 38px; } }
   @media (max-width: 1024px) {
     .our-works__list {
-      grid-template-columns: repeat(4, -webkit-max-content);
-      grid-template-columns: repeat(4, max-content);
+      grid-template-columns: repeat(8, -webkit-max-content);
+      grid-template-columns: repeat(8, max-content);
       -moz-column-gap: 3.13vw;
            column-gap: 3.13vw;
       row-gap: 35px;
@@ -1229,8 +1242,13 @@ p.price {
       height: 10.42vw; } }
   @media (max-width: 1024px) {
     .our-works__list li {
+      grid-column: span 2;
       width: 19.53vw;
       height: 19.53vw; } }
+
+@media (max-width: 1024px) {
+  .our-works__list li:nth-child(5) {
+    grid-column: 2 / span 2; } }
 
 .our-works__list img {
   position: absolute;
