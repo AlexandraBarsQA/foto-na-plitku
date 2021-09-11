@@ -62,7 +62,7 @@
             </ul>
           </li>
           <li>
-            <a href="catalog.html">фотопечать</a>
+            <a href="form.html">фотопечать</a>
             <ul class="nav-inner">
               <li>
                 <a href="#">технологии фотопечати</a>
@@ -89,43 +89,36 @@
         </ul>
       </nav>
     </div>
-    <div class="navigation-slider">
-      <div class="container">
-        <div class="navigation-slider__wrap swiper-container">
-          <div class="navigation-slider__list swiper-wrapper">
-            <div class="navigation-slider__item swiper-slide">
-              <a class="navigation-slider__link-active" href="#" title="">цветы</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">фрукты</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">овощи</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">архитектура</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">природа</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">тропики</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">море</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">ретро</a>
-            </div>
-            <div class="navigation-slider__item swiper-slide">
-              <a href="#" title="">абстракция</a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="navigation-slider__toggle navigation-slider__toggle--prev swiper-button-next"></div>
-          <div class="navigation-slider__toggle navigation-slider__toggle--next swiper-button-prev"></div>
-        </div>
-      </div>
+    <div class="navigation-slider container">
+      <ul class="navigation-slider__list">
+        <li>
+          <a class="navigation-slider__link-active" href="#" title="">цветы</a>
+        </li>
+        <li>
+          <a href="#" title="">фрукты</a>
+        </li>
+        <li>
+          <a href="#" title="">овощи</a>
+        </li>
+        <li>
+          <a href="#" title="">архитектура</a>
+        </li>
+        <li>
+          <a href="#" title="">природа</a>
+        </li>
+        <li>
+          <a href="#" title="">тропики</a>
+        </li>
+        <li>
+          <a href="#" title="">море</a>
+        </li>
+        <li>
+          <a href="#" title="">ретро</a>
+        </li>
+        <li>
+          <a href="#" title="">абстракция</a>
+        </li>
+      </ul>
     </div>
   </header>
   <main class="page-main page-main--inner">
@@ -149,7 +142,7 @@
         <li class="crumb-item crumb-item--current">панно на керамической плитке гиацинты 60 х 80 см
         </li>
       </ul>
-      <section class="goods-card">
+      <section class="goods-card goods-card--product">
         <h1>Панно на керамической плитке натюрмотрт с гиацинтом 60 Х 80 см</h1>
         <div class="goods-card__wrap">
           <div class="goods-card__slider">
@@ -163,6 +156,7 @@
                 </div>
               </div>
             </div>
+
             <div class="slider-card-thumbs swiper-container">
               <div class="slider-card-thumbs__list swiper-wrapper">
                 <div class="slider-card-thumbs__item swiper-slide">
@@ -176,10 +170,8 @@
                   </figure>
                 </div>
               </div>
-
               <a class="slider-card-thumbs__toggle slider-card-thumbs__toggle--prev swiper-button-prev"></a>
               <a class="slider-card-thumbs__toggle slider-card-thumbs__toggle--next swiper-button-next"></a>
-
             </div>
           </div>
           <div class="goods-card__desc user-order">
@@ -187,6 +179,7 @@
             <p>Наибольшей популярностью ботаническая тематика у дизайнеров и декораторов пользуется при оформлении интерьеров в стиле кантри, а именно во французском кантри — в стиле «прованс». Но и во многих других стилях вполне уместны ботанические мотивы.</p>
             <span>Цвет на экране монитора может незначительно отличаться от реального цвета продукции.</span>
             <form class="user-order__form form-users" action="" method="post">
+            <div class="form-users__wrapp">
              <fieldset class="form-users__field">
               <legend>Поверхность</legend>
               <ul class="form-users__list">
@@ -225,11 +218,12 @@
                 </li>
               </ul>
             </fieldset>
-          </form>
-          <div class="user-order__buy">
-            <p>5 500 руб.</p>
-            <a class="user-order__btn button" href="#">в корзину</a>
           </div>
+          <div class="form-users__buy">
+            <p>5 500 руб.</p>
+            <button class="form-users__btn button">в корзину</button>
+          </div>
+          </form>
           <article class="user-order__delivery delivery">
             <div class="delivery__item">
               <p>Москва и ближнее<br> Подмосковье</p>
@@ -249,11 +243,12 @@
         </div>
       </div>
     </section>
-    <section class="gallery-inner gallery-inner--product">
+  </div>
+    <section class="gallery-inner gallery-inner--product container">
       <h2>Другие товары из этой коллекции</h2>
       <ul class="gallery-inner__cards gallery-inner__cards--col4">
         <li class="card card--new">
-          <a class="gallery-info gallery-info--coll" href="goods-panno.html" title="">
+          <a class="gallery-info gallery-info--goods" href="goods-panno.html" title="">
             <div class="gallery-info__img">
               <picture>
                 <source srcset="img/gallery-slider-01.webp" type="image/webp">
@@ -267,11 +262,15 @@
                 <p class="gallery-info__price price">12 500 руб.</p>
               </div>
             </a>
-            <span class="msfavorites-text-add">сердце пустое</span>
-            <span class="msfavorites-text-remove">сердце красное</span>
+
+                <!--
+                <span class="msfavorites-text-add">сердце пустое</span>
+                <span class="msfavorites-text-remove">сердце красное</span>
+                -->
+
           </li>
           <li>
-            <a class="gallery-info gallery-info--coll" href="goods-panno.html" title="">
+            <a class="gallery-info gallery-info--goods" href="goods-panno.html" title="">
               <div class="gallery-info__img">
                 <picture>
                   <source srcset="img/gallery-slider-01.webp" type="image/webp">
@@ -285,11 +284,15 @@
                   <p class="gallery-info__price price">12 500 руб.</p>
                 </div>
               </a>
-              <span class="msfavorites-text-add">сердце пустое</span>
-              <span class="msfavorites-text-remove">сердце красное</span>
+
+                <!--
+                <span class="msfavorites-text-add">сердце пустое</span>
+                <span class="msfavorites-text-remove">сердце красное</span>
+                -->
+
             </li>
             <li>
-              <a class="gallery-info gallery-info--coll" href="goods-panno.html" title="">
+              <a class="gallery-info gallery-info--goods" href="goods-panno.html" title="">
                 <div class="gallery-info__img">
                   <picture>
                     <source srcset="img/gallery-slider-01.webp" type="image/webp">
@@ -303,11 +306,15 @@
                     <p class="gallery-info__price price">12 500 руб.</p>
                   </div>
                 </a>
+
+                <!--
                 <span class="msfavorites-text-add">сердце пустое</span>
                 <span class="msfavorites-text-remove">сердце красное</span>
+                -->
+
               </li>
               <li class="card card--hit">
-                <a class="gallery-info gallery-info--coll" href="goods-panno.html" title="">
+                <a class="gallery-info gallery-info--goods" href="goods-panno.html" title="">
                   <div class="gallery-info__img">
                     <picture>
                       <source srcset="img/gallery-slider-01.webp" type="image/webp">
@@ -321,13 +328,16 @@
                       <p class="gallery-info__price price">12 500 руб.</p>
                     </div>
                   </a>
-                  <span class="msfavorites-text-add">сердце пустое</span>
-                  <span class="msfavorites-text-remove">сердце красное</span>
+
+                <!--
+                <span class="msfavorites-text-add">сердце пустое</span>
+                <span class="msfavorites-text-remove">сердце красное</span>
+                -->
+
                 </li>
               </ul>
             </section>
-          </div>
-        
+          
         <div class="back-wrapper back-wrapper--offer">
           <section class="offers container">
             <h2 class="headline">Что мы предлагаем?</h2>
@@ -413,8 +423,8 @@
           </div>
         </div>
       </footer>
-      <script src="js/swiper.min.js"></script>
-      <script src="js/swiper-bundle.min.js"></script>
+      <!-- <script src="js/swiper.min.js"></script>  -->
+      <!-- <script src="js/swiper-bundle.min.js"></script>  -->
       <script src="js/script-slider.min.js"></script>
       <script src="js/script.min.js"></script>
     </body>
