@@ -22,7 +22,7 @@
             <a href="collection.html" title="">Коллекции</a>
           </li>
           <li>
-            <a href="#" title="">Вдохновение</a>
+            <a href="ideas.html" title="">Вдохновение</a>
           </li>
         </ul>
         <a class="navigation-top__logo logo" href="index.html" title="">
@@ -48,7 +48,7 @@
             <a href="about.html">о компании</a>
             <ul class="nav-inner">
               <li>
-                <a href="#">наше производство</a>
+                <a href="about.html">наше производство</a>
               </li>
               <li>
                 <a href="#">обработка персональных данных</a>
@@ -68,7 +68,7 @@
                 <a href="#">технологии фотопечати</a>
               </li>
               <li>
-                <a class="nav-inner__link-active" href="#">подготовка фото для печати</a>
+                <a class="nav-inner__link-active">подготовка фото для печати</a>
               </li>
               <li>
                 <a href="#">цены на печати</a>
@@ -90,105 +90,51 @@
       </nav>
     </div>
   </header>
-  <main class="page-main page-main--inner">
+  <main class="page-main page-main--prepare">
     <div class="container">
-      <ul class="crumbs breadcrumb">
+      <ul class="crumbs crumbs--inversion breadcrumb">
         <li class="crumb-item">
           <a href="index.html">Главная</a>/
         </li>
         <li class="crumb-item">
           <a href="#">Фотопечать</a>/
         </li>
-        <li class="crumb-item crumb-item--current">Индивидуальный заказ
+        <li class="crumb-item crumb-item--current">Подготовка фото к печати на плитке
         </li>
       </ul>
-      <section class="personal-order content-info">
-        <h1>Индивидуальный заказ</h1>
-        <p>Заполните поля формы ниже как можно подрообнее, указав все параметры и пожелания. Мы с Вами свяжемся в течение суток для уточнения деталей, согласования сроков выполнения вашего заказа и формирования сметы.</p>
-
-        <form class="personal-order__form form" action="#" method="post">
-          <div class="personal-order__list field-item">
-            <fieldset class="field-item__section">
-              <legend>Предполагаемые размеры панно и параметры плитки</legend>
-              <div class="field-item__wrap">
-                <div>
-                  <label for="panno">ширина х высота панно, см</label>
-                  <input type="text" id="panno" name="size" value="" required>
-                </div>
-                <div class="field-item">
-                  <label for="plate">ширина х высота плиток, см</label>
-                  <input type="text" id="plate" name="size" value="" required>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="field-item__section field-item__section--personal">
-              <ul class="field-item__list">
-                <li class="field-item__item">
-                  <input class="visually-hidden" type="radio" name="surface" value="gloss" id="filter-gloss">
-                  <label for="filter-gloss">Гладкая глянцевая</label>
-                </li>
-                <li class="field-item__item">
-                  <input class="visually-hidden" type="radio" name="surface" value="matte" id="filter-matte">
-                  <label for="filter-matte">Гладкая матовая</label>
-                </li>
-                <li class="field-item__item">
-                  <input class="visually-hidden" type="radio" name="surface" value="semi-gloss" id="filter-semi-gloss">
-                  <label for="filter-semi-gloss">Гладкая полуглянцевая</label>
-                </li>
-                <li class="field-item__item">
-                  <input class="visually-hidden" type="radio" name="surface" value="relief" id="filter-relief">
-                  <label for="filter-relief">Рельефная глянцевая</label>
-                </li>
-                <li class="field-item__item">
-                  <input class="visually-hidden" type="radio" name="surface" value="relief-2" id="filter-relief-2" checked="checked">
-                  <label for="filter-relief-2">Рельефная полуглянцевая</label>
-                </li>
-              </ul>
-            </fieldset>
-            <div class="field-item__section field-item__section--photo">
-              <button class="field-item__subtitle">Загрузите свои изображения</button>
-              <a href="#" title="">Как подготовить фото?</a>
-              <p class="field-item__item field-item__design">
-                <input class="visually-hidden" type="checkbox" name="designer" value="designer" id="filter-design">
-                <label for="filter-design">Нужен дизайнер</label>
-              </p>
+      <article class="prepare-print content-info">
+        <h1>Подготовка фото к печати на плитке</h1>
+        <p>Любое изображение в электронном виде состоит из набора пикселей. Но как узнать, какого размера должно быть исходное фото? С помощью нашего калькулятора очень просто определить параметры изображения для печати.</p>
+          <section class="prepare-print__list">
+            <h2>Укажите свои размеры:</h2>
+            <div class="prepare-print__wrap">
+            <div class="prepare-print__form form field-item">
+            <div>
+              <label for="width">ширина панно, см</label>
+              <input type="text" id="width" name="width" value="" required>
             </div>
-            <fieldset class="field-item__section field-item__section--write">
-              <textarea name="text" placeholder="Комментарии к заказу"></textarea>
-            </fieldset>
-            <fieldset class="field-item__section field-item__section--user">
-              <legend>Контактные данные</legend>
-              <div class="field-item__wrap">
-                <div>
-                  <label for="username">фамилия, имя, отчество</label>
-                  <input type="text" id="username" name="username" value="" required>
-                </div>
-                <div class="field-item">
-                  <label for="usertel">Номер телефона</label>
-                  <input type="tel" id="usertel" name="usertel" value="" required>
-                </div>
-                <div class="field-item">
-                  <label for="usermail">E-mail</label>
-                  <input type="email" id="usermail" name="usermail" value="" required>
-                </div>
-              </div>
-            </fieldset>
+            <div>
+              <label for="height">высота панно, см</label>
+              <input type="text" id="height" name="height" value="" required>
+            </div>
+            <div>
+              <label for="distance">минимальное расстояние<br> до панно, см</label>
+              <input type="text" id="distance" name="distance" value="" required>
+            </div>
+            </div>
+            <div class="prepare-print__info">
+                <p class="prepare-print__size">4722 × 2346 <span>пикселей</span><br> 200 <span>ppi</span> </p>
+                <span class="prepare-print__name">пикселей на дюйм на экране</span>
+            </div>
           </div>
-          <p class="form__notice">Нажимая на кнопку «Оплатить», Вы принимаете условия <a href="#" title="">договора оферты</a> и даёте <a href="#" title="">согласие</a> на обработку Ваших персональных данных.</p>
-          <input class="form__btn button" type="submit" value="отправить">
-        </form>
-      </section>
+        </section>
+            <div class="prepare-print__img">
+              <img src="img/prepare-img.jpg">
+            </div>
+
+      </article>
     </div>
-    <div class="back-wrapper back-wrapper--about">
-      <section class="about-us container">
-        <h2 class="headline">Немного о нас</h2>
-        <ul class="about-us__list">
-          <li>Мы специализируемся исключительно на декорации <a href="#" title="">керамической плитки</a> и производстве удивительных <a href="#" title="">фотопанно</a> на плитке уже более 10 лет!</li>
-          <li>Используемая технология производства – <a href="#" title="">высокотемпературное деколирование</a>. В качестве основы используется стандартная керамическая плитка.</li>
-          <li>Постобжиг выполняется при температуре 750-900 °С. Рисунок впекается в глазурь, что дает безупречную защиту от любых воздействий.</li>
-        </ul>
-      </section>
-    </div>
+
   </main>
   <footer class="page-footer">
     <div class="nav-footer container">
