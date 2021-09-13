@@ -3648,6 +3648,29 @@ p.field-item__design {
       font-size: 34px;
       line-height: 36px; } }
 
+.content-info li {
+  font-family: inherit;
+  font-size: 34px;
+  line-height: 36px;
+  font-weight: 100;
+  color: var(--back-main);
+  margin: 0; }
+  @media (max-width: 1600px) {
+    .content-info li {
+      font-size: 28px;
+      line-height: 30px; } }
+  @media (max-width: 1280px) {
+    .content-info li {
+      font-size: 23px;
+      line-height: 25px; } }
+  @media (max-width: 1080px) {
+    .content-info li {
+      font-size: 34px;
+      line-height: 36px; } }
+
+.content-info a {
+  text-decoration: none; }
+
 .form legend,
 .form label {
   font-family: inherit;
@@ -3927,21 +3950,48 @@ p.field-item__design {
 .about-company a {
   color: var(--back-main); }
 
+.about-company a {
+  text-decoration: underline; }
+
 .about-company__slider {
   margin-top: 93px;
   margin-bottom: 100px; }
 
+.about-company ul {
+  margin-bottom: 20px; }
+
+.about-company ul a {
+  text-decoration: none; }
+
+.about-company li {
+  position: relative;
+  padding-left: 30px; }
+
+.about-company li::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--basic-blue); }
+
 .about-slider-thumb.swiper {
+  display: flex;
+  flex-direction: row;
   width: 891px;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   padding: 0; }
 
-.about-slider-thumb {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0; }
+.gallery-thumbs .swiper-wrapper {
+  width: 100%;
+  height: auto;
+  justify-content: center; }
 
 .about-slider-thumb .swiper-slide {
   width: 200px;
@@ -3961,6 +4011,25 @@ p.field-item__design {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain; }
+
+.about-slider-thumb.swiper-container-autoheight div {
+  width: 100%;
+  /* Ширина области */
+  height: 200px;
+  /* Высота области */
+  margin: 0;
+  /* Обнуляем отступы */
+  overflow: hidden;
+  /* Прячем всё за пределами */ }
+
+.about-slider-thumb.swiper-container-autoheight img {
+  width: 100%;
+  /* Ширина изображений */
+  height: 100%;
+  /* Ширина изображений */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Вписываем фотографию в область */ }
 
 .about-slider-big.swiper {
   width: 891px;
@@ -3991,6 +4060,194 @@ p.field-item__design {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
+
+.idea-item__info {
+  display: grid;
+  grid-template-columns: 652px 718px;
+  -moz-column-gap: 145px;
+       column-gap: 145px; }
+
+.idea-item__info p {
+  margin: 0;
+  margin-bottom: 40px; }
+
+.idea-style {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 58px;
+       column-gap: 58px;
+  margin-top: 40px; }
+
+.idea-style li {
+  position: relative; }
+
+.idea-style li:nth-child(1) {
+  margin-bottom: 142px; }
+
+.idea-style li:nth-child(2) {
+  margin-bottom: 160px; }
+
+.idea-style li:nth-child(3) {
+  margin-bottom: 0; }
+
+.idea-style li:nth-child(4) {
+  margin-bottom: 150px; }
+
+.idea-style__img {
+  position: relative;
+  display: block; }
+
+.idea-style__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.idea-style__img--1 {
+  width: 757px;
+  height: 522px; }
+
+.idea-style__img--1::after {
+  position: absolute;
+  content: "";
+  width: 139px;
+  height: 107px;
+  left: 247px;
+  bottom: -67px;
+  background-image: url("../img/plum.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 10; }
+
+.idea-style__img--2 {
+  width: 555px;
+  height: 534px; }
+
+.idea-style__img--3 {
+  width: 736px;
+  height: 1092px; }
+
+.idea-style__img--4 {
+  width: 653px;
+  height: 789px; }
+
+.idea-style__img--4::after {
+  position: absolute;
+  content: "";
+  width: 87px;
+  height: 113px;
+  top: 362px;
+  left: -67px;
+  background-image: url("../img/leaf.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 10; }
+
+.idea-style__title {
+  position: absolute;
+  margin: 0;
+  z-index: 20; }
+
+.inscription {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: rgba(30, 136, 192, 0.8);
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 15px; }
+
+.slider-idea {
+  margin-top: -98px; }
+
+.slider-idea__item {
+  display: flex; }
+
+.slider-idea__img {
+  position: relative;
+  width: 100%;
+  height: 1125px;
+  text-align: center; }
+  @media (max-width: 1600px) {
+    .slider-idea__img {
+      height: 1125px; } }
+  @media (max-width: 1280px) {
+    .slider-idea__img {
+      height: 1125px; } }
+
+.slider-idea__item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 80%;
+     object-position: 50% 80%; }
+
+.slider-idea__title {
+  position: absolute;
+  margin: 0;
+  z-index: 20; }
+
+.slider-idea__toggle {
+  position: absolute;
+  display: block;
+  width: 84px;
+  height: 115px;
+  top: 530px;
+  background: url("../img/arrow-white.png") rgba(197, 47, 67, 0.8);
+  background-repeat: no-repeat;
+  background-size: 30px 46px;
+  background-position: 60% 50%;
+  z-index: 10;
+  cursor: pointer; }
+  @media (max-width: 1600px) {
+    .slider-idea__toggle {
+      width: 67px;
+      height: 92px;
+      top: 410px;
+      background-size: 25px 37px; } }
+  @media (max-width: 1280px) {
+    .slider-idea__toggle {
+      width: 56px;
+      height: 77px;
+      top: 343px;
+      background-size: 20px 31px; } }
+  @media (max-width: 1080px) {
+    .slider-idea__toggle {
+      width: 45px;
+      height: 60px;
+      top: 328px;
+      background-size: 17px 24px; } }
+
+.slider-idea__toggle--prev {
+  left: 0;
+  transform: scaleX(-1); }
+
+.slider-idea__toggle--next {
+  right: 0; }
+
+.slider-idea--scandinavia .slider-idea__toggle {
+  background: url("../img/arrow-white.png") rgba(30, 136, 192, 0.8);
+  background-repeat: no-repeat;
+  background-size: 30px 46px;
+  background-position: 60% 50%; }
+
+.slider-idea--modern .slider-idea__toggle {
+  background: url("../img/arrow-white.png") rgba(241, 111, 0, 0.8);
+  background-repeat: no-repeat; }
+
+.slider-idea--provence .slider-idea__toggle {
+  background: url("../img/arrow-white.png") rgba(197, 47, 67, 0.8);
+  background-repeat: no-repeat; }
 
 .button {
   display: block;
