@@ -22,7 +22,7 @@
             <a href="collection.html" title="">Коллекции</a>
           </li>
           <li>
-            <a href="#" title="">Вдохновение</a>
+            <a href="ideas.html" title="">Вдохновение</a>
           </li>
         </ul>
         <a class="navigation-top__logo logo" href="index.html" title="">
@@ -62,13 +62,13 @@
             </ul>
           </li>
           <li>
-            <a href="catalog.html">фотопечать</a>
+            <a href="form.html">фотопечать</a>
             <ul class="nav-inner">
               <li>
                 <a href="#">технологии фотопечати</a>
               </li>
               <li>
-                <a class="nav-inner__link-active" href="#">подготовка фото для печати</a>
+                <a href="photo.html">подготовка фото для печати</a>
               </li>
               <li>
                 <a href="#">цены на печати</a>
@@ -97,7 +97,7 @@
           <a href="index.html">Главная</a>/
         </li>
         <li class="crumb-item">
-          <a href="#">Фотопечать</a>/
+          <a href="form.html">Фотопечать</a>/
         </li>
         <li class="crumb-item crumb-item--current">Индивидуальный заказ
         </li>
@@ -105,12 +105,11 @@
       <section class="personal-order content-info">
         <h1>Индивидуальный заказ</h1>
         <p>Заполните поля формы ниже как можно подрообнее, указав все параметры и пожелания. Мы с Вами свяжемся в течение суток для уточнения деталей, согласования сроков выполнения вашего заказа и формирования сметы.</p>
-
         <form class="personal-order__form form" action="#" method="post">
           <div class="personal-order__list field-item">
             <fieldset class="field-item__section">
               <legend>Предполагаемые размеры панно и параметры плитки</legend>
-              <div class="field-item__wrap">
+              <div class="field-item__wrap field-item__wrap--size">
                 <div>
                   <label for="panno">ширина х высота панно, см</label>
                   <input type="text" id="panno" name="size" value="" required>
@@ -146,7 +145,11 @@
               </ul>
             </fieldset>
             <div class="field-item__section field-item__section--photo">
-              <button class="field-item__subtitle">Загрузите свои изображения</button>
+            <div class="field-item__upload">
+              <label class="field-item__subtitle" for="file-upload">Загрузите свои изображения
+              </label>
+              <input id="file-upload" type="file">
+            </div>
               <a href="#" title="">Как подготовить фото?</a>
               <p class="field-item__item field-item__design">
                 <input class="visually-hidden" type="checkbox" name="designer" value="designer" id="filter-design">
